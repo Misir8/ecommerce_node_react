@@ -1,16 +1,35 @@
-import React, {FC} from 'react';
-import products from "../../products";
+import React, {FC, useEffect, useState} from 'react';
 import {IProduct} from "../../models/Product";
 import { Link } from 'react-router-dom';
 import {Col, Row, Image, ListGroup, Card, Button} from "react-bootstrap";
-import Rating from "../Product/Rating";
+import Rating from "../product/Rating";
+import axios from "axios";
 
 type IProps = {
     match: any;
 }
 
 const ProductPage: FC<IProps> = ({match}) => {
-    const product: IProduct | undefined  = products.find(product => product._id === match.params.id);
+
+    const [product, setProduct] = useState<IProduct>({
+        _id: "",
+        brand: "",
+        category: "",
+        countInStock: 0,
+        description: "",
+        image: "",
+        name: "",
+        numReviews: 0,
+        price: 0,
+        rating: 0
+    });
+    useEffect(() => {
+        const fetchProduct = async () => {
+            const {data} = await axios.get<IProduct>(`http://localhost:5000/api/products/${match.params.id}`);
+            setProduct(data);
+        }
+        fetchProduct();
+    });
 
     const productTemplate = product ?
         <>
@@ -72,6 +91,7 @@ const ProductPage: FC<IProps> = ({match}) => {
             {productTemplate}
         </div>
     );
+
 };
 
 export default ProductPage;
