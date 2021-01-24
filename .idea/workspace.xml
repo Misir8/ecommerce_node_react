@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6ceee08-ca57-429c-a673-09e8d3d9478c" name="Default Changelist" comment="">
+    <list default="true" id="e6ceee08-ca57-429c-a673-09e8d3d9478c" name="Default Changelist" comment="Added backend project">
       <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/ecommerce_express_react.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_express/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ecommerce_express/config/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ecommerce_express/node_modules/.bin/esparse" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ecommerce_express/node_modules/.bin/esvalidate" afterDir="false" />
@@ -4040,7 +4041,16 @@
       <workItem from="1611413377078" duration="4470000" />
       <workItem from="1611418223255" duration="7496000" />
       <workItem from="1611510158361" duration="5312000" />
+      <workItem from="1611516953775" duration="380000" />
     </task>
+    <task id="LOCAL-00001" summary="Added backend project">
+      <created>1611517339766</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611517339766</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -4057,5 +4067,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added backend project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added backend project" />
   </component>
 </project>
