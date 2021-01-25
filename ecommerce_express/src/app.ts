@@ -3,9 +3,11 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import {baseRouter} from './routes/index.route';
+import connectDb from "./db/db";
 
 dotenv.config({ path: './config/.env' });
 
+connectDb();
 const app = express();
 
 app.use(bodyParser.json());
