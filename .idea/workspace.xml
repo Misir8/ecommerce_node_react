@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6ceee08-ca57-429c-a673-09e8d3d9478c" name="Default Changelist" comment="delete node_modules">
-      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/exceptions/HttpException.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/middlewares/error.middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/middlewares/validation.middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce_react/src/actions/producActions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce_react/src/reducers/productReducers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce_react/src/store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce_react/src/types/productListTypes.ts" afterDir="false" />
+    <list default="true" id="e6ceee08-ca57-429c-a673-09e8d3d9478c" name="Default Changelist" comment="Added Redux">
+      <change afterPath="$PROJECT_DIR$/ecommerce_react/src/reducers/productDetailsReducers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_react/src/types/products/productDetailsTypes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_express/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_express/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_express/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_express/src/controllers/products.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/src/controllers/products.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_express/src/models/productModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/src/models/productModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_express/src/models/userModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/src/models/userModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_express/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce_react/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_react/src/components/pages/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/components/pages/HomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_react/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_react/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_react/src/actions/producActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/actions/producActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_react/src/components/pages/ProductPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/components/pages/ProductPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_react/src/reducers/productReducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/reducers/productReducers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_react/src/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_react/src/types/productListTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/types/products/productListTypes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +54,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Node\ecommerce_node_react\ecommerce_react\src\types\products" />
       <recent name="$PROJECT_DIR$/ecommerce_express/src/data" />
       <recent name="$PROJECT_DIR$/ecommerce_express/src/controllers" />
       <recent name="$PROJECT_DIR$/ecommerce_react/src/components/Product" />
@@ -148,7 +138,9 @@
       <workItem from="1611684958031" duration="704000" />
       <workItem from="1611685672801" duration="7324000" />
       <workItem from="1611697011699" duration="543000" />
-      <workItem from="1611728780021" duration="8669000" />
+      <workItem from="1611728780021" duration="9834000" />
+      <workItem from="1611748211280" duration="793000" />
+      <workItem from="1611757874271" duration="1454000" />
     </task>
     <task id="LOCAL-00001" summary="Added backend project">
       <created>1611517339766</created>
@@ -171,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611517579303</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Redux">
+      <created>1611746194284</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611746194284</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +192,8 @@
     <MESSAGE value="Added backend project" />
     <MESSAGE value="Added gitignore" />
     <MESSAGE value="delete node_modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete node_modules" />
+    <MESSAGE value="Added Redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Redux" />
   </component>
   <component name="regexState">
     <option name="map">

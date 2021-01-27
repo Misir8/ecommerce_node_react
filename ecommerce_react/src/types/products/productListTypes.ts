@@ -1,4 +1,4 @@
-import {IProduct} from "../models/Product";
+import {IProduct} from "../../models/Product";
 
 export enum ProductListTypes {
     REQUEST_PRODUCT_LIST = 'REQUEST_PRODUCT_LIST',
@@ -29,4 +29,4 @@ interface ProductListFailType{
 
 
 
-export type ProductActions = RequestProductType | ProductListType | ProductListFailType;
+export type ProductListActions = RequestProductType | ProductListType | ProductListFailType;

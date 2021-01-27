@@ -1,9 +1,9 @@
-import {ProductActions, ProductState, ProductListTypes} from "../types/productListTypes";
+import {ProductListActions, ProductState, ProductListTypes} from "../types/products/productListTypes";
 
 
 const initialState: ProductState = {products: [], loading: false, error: false}
 
-export const productReducers = (state = initialState, action: ProductActions): ProductState => {
+export const productListReducers = (state = initialState, action: ProductListActions): ProductState => {
     switch (action.type) {
         case ProductListTypes.REQUEST_PRODUCT_LIST:
             return {...state, error: false, products: [], loading: true};
@@ -15,3 +15,5 @@ export const productReducers = (state = initialState, action: ProductActions): P
             return initialState;
     }
 }
+
+
