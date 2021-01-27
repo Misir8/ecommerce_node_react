@@ -1,4 +1,5 @@
 import * as mongoose from "mongoose";
+import {Document} from "mongoose";
 import IProduct from "../interfaces/IProduct";
 
 const reviewSchema = new mongoose.Schema({
@@ -60,6 +61,6 @@ const productSchema = new mongoose.Schema({
     timestamps: true
 })
 
-const Product = mongoose.model<IProduct>('Product', productSchema);
+const Product = mongoose.model<IProduct & Document>('Product', productSchema);
 
 export default Product;

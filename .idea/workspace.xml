@@ -2,22 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6ceee08-ca57-429c-a673-09e8d3d9478c" name="Default Changelist" comment="delete node_modules">
-      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/data/seeder.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/data/users.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/db/db.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/interfaces/IProduct.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/interfaces/IUser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/models/orderModel.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/models/productModel.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/models/userModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/exceptions/HttpException.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/middlewares/error.middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/middlewares/validation.middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_react/src/actions/producActions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_react/src/reducers/productReducers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_react/src/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_react/src/types/productListTypes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_express/config/.env" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/config/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce_express/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce_express/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce_express/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/src/app.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce_express/src/controllers/products.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/src/controllers/products.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_express/src/products.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/src/data/products.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/src/models/productModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/src/models/productModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/src/models/userModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/src/models/userModel.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce_express/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_react/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_react/src/components/pages/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/components/pages/HomePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_react/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_react/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +57,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/ecommerce_react/node_modules/typescript/lib" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="ts.external.directory.path" value="D:\Node\ecommerce_node_react\ecommerce_express\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -64,7 +70,7 @@
       <recent name="$PROJECT_DIR$/ecommerce_react/src/components/Product" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.data:destroyed">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/ecommerce_express/package.json" />
       <command value="run" />
@@ -95,11 +101,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dev:data:destroyed" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/ecommerce_express/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev:data:destroyed" />
+        <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -117,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.data:destroyed" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.data:imported" />
+        <item itemvalue="npm.data:destroyed" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.dev:data:imported" />
-        <item itemvalue="npm.dev:data:destroyed" />
       </list>
     </recent_temporary>
   </component>
@@ -138,6 +144,11 @@
       <workItem from="1611510158361" duration="5312000" />
       <workItem from="1611516953775" duration="662000" />
       <workItem from="1611597647919" duration="7017000" />
+      <workItem from="1611684617251" duration="286000" />
+      <workItem from="1611684958031" duration="704000" />
+      <workItem from="1611685672801" duration="7324000" />
+      <workItem from="1611697011699" duration="543000" />
+      <workItem from="1611728780021" duration="8669000" />
     </task>
     <task id="LOCAL-00001" summary="Added backend project">
       <created>1611517339766</created>
@@ -183,5 +194,15 @@
     <MESSAGE value="Added gitignore" />
     <MESSAGE value="delete node_modules" />
     <option name="LAST_COMMIT_MESSAGE" value="delete node_modules" />
+  </component>
+  <component name="regexState">
+    <option name="map">
+      <map>
+        <entry key="flags" value="0" />
+        <entry key="mode" value="0" />
+        <entry key="regex" value="(19||20)\d\d([- /.])(0[1-9]||1[012])\2(0[1-9]||[12][0-9]||3[01])" />
+        <entry key="text" value="1900-01-01 2007/08/13 1900.01.01 1900 01 01 1900-01.01 1900 13 01 1900 02 31" />
+      </map>
+    </option>
   </component>
 </project>
