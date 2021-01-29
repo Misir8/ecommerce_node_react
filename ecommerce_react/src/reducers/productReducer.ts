@@ -3,7 +3,7 @@ import {ProductListActions, ProductState, ProductListTypes} from "../types/produ
 
 const initialState: ProductState = {products: [], loading: false, error: false}
 
-export const productListReducers = (state = initialState, action: ProductListActions): ProductState => {
+export const productListReducer = (state = initialState, action: ProductListActions): ProductState => {
     switch (action.type) {
         case ProductListTypes.REQUEST_PRODUCT_LIST:
             return {...state, error: false, products: [], loading: true};

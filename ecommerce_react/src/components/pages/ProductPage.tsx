@@ -1,4 +1,4 @@
-import React, {FC, useEffect} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import {Col, Row, Image, ListGroup, Card, Button} from "react-bootstrap";
 import Rating from "../product/Rating";
@@ -12,8 +12,9 @@ type IProps = {
 }
 
 const ProductPage: FC<IProps> = ({match}) => {
-    const dispatch = useDispatch();
     const {id} = match.params;
+    const [count, setCount] = useState<number>(0);
+    const dispatch = useDispatch();
     const productList = useSelector((state: RootState) => state.productDetails);
     const {error, loading, product} = productList;
 
@@ -21,6 +22,9 @@ const ProductPage: FC<IProps> = ({match}) => {
         dispatch(productDetailsAction(id));
     }, [dispatch, id]);
 
+    const addToCart = (id: string) =>{
+        setCount(count + 1);
+    }
 
     return (
         <>
@@ -71,6 +75,25 @@ const ProductPage: FC<IProps> = ({match}) => {
                                                 <strong>${product.countInStock > 0 ? "In Stock" : "Out in Stock"}</strong>
                                             </Col>
                                         </Row>
+                                    </ListGroup.Item>
+                                    <ListGroup.Item>
+                                       <Row>
+                                           <Col className="d-flex justify-content-center align-items-center">
+                                               <Button
+                                                   onClick={() => setCount(count - 1)}
+                                                   className="btn btn-primary"
+                                                   disabled={(count === 0)}>-</Button>
+                                           </Col>
+                                           <Col className="d-flex justify-content-center align-items-center">
+                                               <span>{count}</span>
+                                           </Col>
+                                           <Col className="d-flex justify-content-center align-items-center">
+                                               <Button
+                                                    onClick={() => addToCart(product._id)}
+                                                    className="btn btn-primary"
+                                                    disabled={(product.countInStock <= count)}>+</Button>
+                                           </Col>
+                                       </Row>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Button className="btn btn-block btn-dark" disabled={(product.countInStock === 0)}>ADD

@@ -6,7 +6,10 @@ import {baseRouter} from './routes/index.route';
 import connectDb from "./db/db";
 import errorMiddleware from "./middlewares/error.middleware";
 
+
 dotenv.config({ path: './config/.env' });
+
+
 
 connectDb();
 const app = express();

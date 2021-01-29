@@ -1,10 +1,11 @@
 import {createStore, combineReducers, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
 import {composeWithDevTools} from "redux-devtools-extension";
-import {productListReducers} from "./reducers/productReducers";
+import {productListReducer} from "./reducers/productReducer";
 import {ProductState} from "./types/products/productListTypes";
 import {ProductDetailsState} from "./types/products/productDetailsTypes";
-import {productDetailsReducers} from "./reducers/productDetailsReducers";
+import {productDetailsReducer} from "./reducers/productDetailsReducer";
+
 
 export interface RootState {
     productList: ProductState;
@@ -12,8 +13,8 @@ export interface RootState {
 }
 
 const rootReducer = combineReducers<RootState>({
-    productList: productListReducers,
-    productDetails: productDetailsReducers
+    productList: productListReducer,
+    productDetails: productDetailsReducer,
 });
 
 const initialState = {};

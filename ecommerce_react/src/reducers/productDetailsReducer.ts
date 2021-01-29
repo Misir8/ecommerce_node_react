@@ -3,7 +3,7 @@ import {IProduct} from "../models/Product";
 
 const initialState: ProductDetailsState = {error: false, loading: false, product: {} as IProduct}
 
-export const productDetailsReducers = (state = initialState, action: ProductDetailsActions): ProductDetailsState => {
+export const productDetailsReducer = (state = initialState, action: ProductDetailsActions): ProductDetailsState => {
     switch (action.type) {
         case ProductDetailsTypes.REQUEST_PRODUCT_DETAILS:
             return {...state, error: false, product: {} as IProduct, loading: true};

@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e6ceee08-ca57-429c-a673-09e8d3d9478c" name="Default Changelist" comment="Added Redux">
-      <change afterPath="$PROJECT_DIR$/ecommerce_react/src/reducers/productDetailsReducers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce_react/src/types/products/productDetailsTypes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/controllers/carts.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/interfaces/cartItem.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/models/customerCart.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/routes/cart.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_express/src/utils/redis.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_react/src/actions/cartActions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_react/src/reducers/cartReducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce_react/src/types/cart/cartTypes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/dist/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/dist/controllers/products.controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/dist/data/products.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/dist/data/seeder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/dist/data/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/dist/db/db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/dist/interfaces/IProduct.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/dist/interfaces/IUser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/dist/models/orderModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/dist/models/productModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/dist/models/userModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/dist/routes/index.route.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/dist/routes/product.route.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/src/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/src/routes/index.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/src/routes/index.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_express/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_express/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce_react/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_react/src/actions/producActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/actions/producActions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce_react/src/components/pages/ProductPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/components/pages/ProductPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_react/src/reducers/productReducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/reducers/productReducers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_react/src/reducers/productDetailsReducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/reducers/productDetailsReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce_react/src/reducers/productReducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/reducers/productReducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce_react/src/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce_react/src/types/productListTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce_react/src/types/products/productListTypes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +62,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
   <component name="ProjectId" id="1nTU3azoX2fJ83onR4bFz7a4dk4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -54,6 +83,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ecommerce_express/src/interfaces" />
       <recent name="D:\Node\ecommerce_node_react\ecommerce_react\src\types\products" />
       <recent name="$PROJECT_DIR$/ecommerce_express/src/data" />
       <recent name="$PROJECT_DIR$/ecommerce_express/src/controllers" />
@@ -97,7 +127,7 @@
       <scripts>
         <script value="dev" />
       </scripts>
-      <node-interpreter value="project" />
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v14.15.4/bin/node" />
       <envs />
       <method v="2" />
     </configuration>
@@ -141,6 +171,10 @@
       <workItem from="1611728780021" duration="9834000" />
       <workItem from="1611748211280" duration="793000" />
       <workItem from="1611757874271" duration="1454000" />
+      <workItem from="1611865203951" duration="2609000" />
+      <workItem from="1611892636276" duration="37000" />
+      <workItem from="1611911175944" duration="287000" />
+      <workItem from="1611917908781" duration="13055000" />
     </task>
     <task id="LOCAL-00001" summary="Added backend project">
       <created>1611517339766</created>
@@ -194,6 +228,17 @@
     <MESSAGE value="delete node_modules" />
     <MESSAGE value="Added Redux" />
     <option name="LAST_COMMIT_MESSAGE" value="Added Redux" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/ecommerce_react/src/actions/cartActions.ts</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="regexState">
     <option name="map">
